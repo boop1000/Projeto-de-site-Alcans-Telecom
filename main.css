@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Navegação (Links) */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #FE5000; /* Ajuste para a cor da marca */
+}
+
+/* Logo na direita */
+.logo img {
+    height: 40px; /* Ajuste a altura conforme a sua imagem */
+    width: auto;
+}
+
+/* Responsividade para telas menores (Celulares) */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 10px;
+        font-size: 14px;
+    }
+}
+
+
+
+
+/* Estilo Geral do Rodapé */
+.footer {
+    background-color: #1a1a1a; /* Tom escuro para destacar do fundo principal */
+    color: #ffffff;
+    padding: 40px 5% 20px 5%;
+    margin-top: 50px; /* Separa o conteúdo principal do rodapé */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-col h3, .footer-col h4 {
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.footer-col p {
+    color: #cccccc;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Listas de Links */
+.footer-links, .footer-socials {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li, .footer-socials li {
+    margin-bottom: 100px;
+    margin-bottom: 8px;
+}
+
+.footer-links a, .footer-socials a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover, .footer-socials a:hover {
+    color: #FE5000; /* Cor de destaque ao passar o mouse */
+}
+
+/* Linha Final de Direitos Autorais */
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    margin-top: 30px;
+    font-size: 12px;
+    color: #888888;
+}
+
+/* Responsividade para Celulares */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+}
+
+/* Reset Básico e Fontes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Header & Navbar */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #FE5000;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+    display: block;
+}
+
+/* Seção História (Conteúdo Principal) */
+.historia {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.historia h1 {
+    color: #FE5000;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.historia h3 {
+    color: #555555;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #eef2f5;
+    padding-bottom: 15px;
+}
+
+.historia p {
+    color: #4a5568;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Rodapé (Footer) */
+.footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 50px 5% 20px 5%;
+    margin-top: 60px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 220px;
+}
+
+.footer-col h3, 
+.footer-col h4 {
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.footer-col p {
+    color: #a0aec0;
+    font-size: 0.9rem;
+}
+
+.footer-links, 
+.footer-socials {
+    list-style: none;
+}
+
+.footer-links li, 
+.footer-socials li {
+    margin-bottom: 10px;
+}
+
+.footer-links a, 
+.footer-socials a {
+    color: #a0aec0;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover, 
+.footer-socials a:hover {
+    color: #FE5000;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #2d3748;
+    padding-top: 20px;
+    margin-top: 40px;
+    font-size: 0.85rem;
+    color: #718096;
+}
+
+/* Responsividade para Celulares */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column-reverse;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        font-size: 0.85rem;
+    }
+
+    .historia {
+        margin: 20px 15px;
+        padding: 25px 20px;
+    }
+
+    .historia h1 {
+        font-size: 1.75rem;
+    }
+
+    .historia h3 {
+        font-size: 1rem;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Container da Seção */
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    padding: 20px;
+}
+
+/* Card Principal de Contato */
+.contact-card {
+    background-color: #ffffff;
+    border-radius: 16px; /* Bordas Arredondadas */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+}
+
+.contact-card h2 {
+    color: #FE5000;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+.contact-card p {
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+}
+
+/* Container dos Botões */
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Botões Estilizados */
+.contact-btn {
+    display: block;
+    padding: 12px 20px;
+    border-radius: 8px; /* Arredondamento dos botões */
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.contact-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+/* Cores específicas por serviço */
+.contact-btn.whatsapp {
+         background-color: #08ed08;
+
+}
+
+.contact-btn.instagram {
+    background-color: #e10ef4;
+}
+
+.contact-btn.email {
+    background-color: #f83600;
+}
+
+.contact-btn.phone {
+    background-color: #0056b3;
+}
