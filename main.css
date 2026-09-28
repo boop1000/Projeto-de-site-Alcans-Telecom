@@ -34,7 +34,7 @@
 
 /* Logo na direita */
 .logo img {
-    height: 40px; /* Ajuste a altura conforme a sua imagem */
+    height: 40px; 
     width: auto;
 }
 
@@ -56,10 +56,10 @@
 
 /* Estilo Geral do Rodapé */
 .footer {
-    background-color: #1a1a1a; /* Tom escuro para destacar do fundo principal */
+    background-color: #1a1a1a;
     color: #ffffff;
     padding: 40px 5% 20px 5%;
-    margin-top: 50px; /* Separa o conteúdo principal do rodapé */
+    margin-top: 50px; 
 }
 
 .footer-container {
@@ -106,7 +106,7 @@
 }
 
 .footer-links a:hover, .footer-socials a:hover {
-    color: #FE5000; /* Cor de destaque ao passar o mouse */
+    color: #FE5000; 
 }
 
 /* Linha Final de Direitos Autorais */
@@ -180,7 +180,7 @@ body {
     display: block;
 }
 
-/* Seção História (Conteúdo Principal) */
+
 .historia {
     max-width: 900px;
     margin: 40px auto;
@@ -311,7 +311,7 @@ body {
     }
 }
 
-/* Container da Seção */
+
 .contact-section {
     display: flex;
     justify-content: center;
@@ -320,10 +320,10 @@ body {
     padding: 20px;
 }
 
-/* Card Principal de Contato */
+
 .contact-card {
     background-color: #ffffff;
-    border-radius: 16px; /* Bordas Arredondadas */
+    border-radius: 16px; 
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     padding: 40px;
     max-width: 450px;
@@ -343,18 +343,18 @@ body {
     margin-bottom: 25px;
 }
 
-/* Container dos Botões */
+
 .contact-links {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-/* Botões Estilizados */
+
 .contact-btn {
     display: block;
     padding: 12px 20px;
-    border-radius: 8px; /* Arredondamento dos botões */
+    border-radius: 8px; 
     text-decoration: none;
     font-weight: bold;
     color: #ffffff;
@@ -366,7 +366,7 @@ body {
     opacity: 0.9;
 }
 
-/* Cores específicas por serviço */
+
 .contact-btn.whatsapp {
          background-color: #08ed08;
 
@@ -382,4 +382,328 @@ body {
 
 .contact-btn.phone {
     background-color: #0056b3;
+}
+
+.planos {
+    padding: 50px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.planos-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.planos-intro h1 {
+    font-size: 2.2rem;
+    color: #111111;
+    margin-bottom: 10px;
+}
+
+.planos-intro p {
+    font-size: 1.1rem;
+    color: #666666;
+}
+
+.planos-lista {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 60px;
+}
+
+.plano-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 30px 20px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plano-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.plano-card h3 {
+    font-size: 1.6rem;
+    color: #111111;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.plano-preco {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #ff6600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.plano-preco span {
+    font-size: 1.2rem;
+    vertical-align: super;
+}
+
+.plano-preco small {
+    font-size: 0.9rem;
+    color: #777777;
+    font-weight: normal;
+}
+
+.plano-beneficios {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.plano-beneficios li {
+    padding: 8px 0;
+    font-size: 0.95rem;
+    color: #555555;
+    border-bottom: 1px dashed #eeeeee;
+}
+
+.plano-beneficios li::before {
+    content: "✓ ";
+    color: #ff6600;
+    font-weight: bold;
+}
+
+.plano-btn {
+    display: block;
+    text-align: center;
+    background-color: #ff6600;
+    color: #ffffff;
+    padding: 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.plano-btn:hover {
+    background-color: #e65c00;
+}
+
+.plano-card.plano-destaque {
+    border: 2px solid #ff6600;
+    box-shadow: 0 8px 25px rgba(255, 102, 0, 0.35);
+    transform: scale(1.04);
+}
+
+.plano-card.plano-destaque:hover {
+    transform: scale(1.06);
+    box-shadow: 0 12px 30px rgba(255, 102, 0, 0.45);
+}
+
+.plano-selo {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff6600;
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 4px 14px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.planos-comparativo {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.planos-comparativo h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: #111111;
+}
+
+.tabela-rolagem {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, td {
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+thead th {
+    background-color: #f1f1f1;
+    color: #111111;
+    font-weight: bold;
+}
+
+tbody th {
+    color: #111111;
+    font-weight: bold;
+}
+
+.linha-destaque {
+    background-color: #fff5ee;
+    font-weight: bold;
+}
+
+.linha-destaque th, 
+.linha-destaque td {
+    color: #ff6600;
+    border-top: 2px solid #ff6600;
+    border-bottom: 2px solid #ff6600;
+}
+/* ===================================================
+   PALETA E ESTILOS GERAIS DA PÁGINA DE FAQ
+   =================================================== */
+
+/* Container Principal */
+main.planos {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Seção de Introdução */
+.planos-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.planos-intro h1 {
+    font-size: 2.2rem;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.planos-intro p {
+    font-size: 1.1rem;
+    color: #666666;
+}
+
+/* ===================================================
+   SEÇÃO DAS PERGUNTAS (DETAILS E SUMMARY)
+   =================================================== */
+
+.planos-faq h2 {
+    font-size: 1.5rem;
+    color: #ff6600; /* Laranja principal da Alcans */
+    margin: 30px 0 15px 0;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ff6600;
+}
+
+/* Card Sanfona (<details>) */
+.planos-faq details {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    padding: 15px 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+}
+
+/* Efeito ao passar o mouse ou abrir */
+.planos-faq details:hover {
+    border-color: #ff6600;
+}
+
+.planos-faq details[open] {
+    border-left: 4px solid #ff6600;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Título Clicável da Pergunta (<summary>) */
+.planos-faq summary {
+    font-weight: bold;
+    font-size: 1.05rem;
+    color: #333333;
+    cursor: pointer;
+    outline: none;
+    list-style: none; /* Remove a seta padrão do navegador */
+    position: relative;
+    padding-right: 25px;
+}
+
+/* Ícone personalizado de indicador (+ e -) */
+.planos-faq summary::-webkit-details-marker {
+    display: none; /* Esconde seta padrão em navegadores WebKit */
+}
+
+.planos-faq summary::after {
+    content: '+';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.3rem;
+    color: #ff6600;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+.planos-faq details[open] summary::after {
+    content: '−';
+}
+
+/* Texto da Resposta */
+.planos-faq details p {
+    margin-top: 12px;
+    font-size: 0.95rem;
+    color: #555555;
+    line-height: 1.6;
+}
+
+/* Links dentro da resposta */
+.planos-faq details a {
+    color: #ff6600;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.planos-faq details a:hover {
+    text-decoration: underline;
+}
+
+/* ===================================================
+   RESPONSIVIDADE (MOBILE)
+   =================================================== */
+
+@media (max-width: 600px) {
+    main.planos {
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+
+    .planos-intro h1 {
+        font-size: 1.8rem;
+    }
+
+    .planos-faq details {
+        padding: 12px 15px;
+    }
+
+    .planos-faq summary {
+        font-size: 0.95rem;
+    }
 }
