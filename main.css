@@ -571,11 +571,10 @@ tbody th {
     border-top: 2px solid #ff6600;
     border-bottom: 2px solid #ff6600;
 }
-/* ===================================================
-   PALETA E ESTILOS GERAIS DA PÁGINA DE FAQ
-   =================================================== */
 
-/* Container Principal */
+
+
+
 main.planos {
     max-width: 900px;
     margin: 40px auto;
@@ -600,19 +599,17 @@ main.planos {
     color: #666666;
 }
 
-/* ===================================================
-   SEÇÃO DAS PERGUNTAS (DETAILS E SUMMARY)
-   =================================================== */
+
 
 .planos-faq h2 {
     font-size: 1.5rem;
-    color: #ff6600; /* Laranja principal da Alcans */
+    color: #ff6600; 
     margin: 30px 0 15px 0;
     padding-bottom: 5px;
     border-bottom: 2px solid #ff6600;
 }
 
-/* Card Sanfona (<details>) */
+
 .planos-faq details {
     background-color: #ffffff;
     border: 1px solid #e0e0e0;
@@ -633,21 +630,21 @@ main.planos {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-/* Título Clicável da Pergunta (<summary>) */
+/* Título Clicável da Pergunta*/
 .planos-faq summary {
     font-weight: bold;
     font-size: 1.05rem;
     color: #333333;
     cursor: pointer;
     outline: none;
-    list-style: none; /* Remove a seta padrão do navegador */
+    list-style: none; 
     position: relative;
     padding-right: 25px;
 }
 
 /* Ícone personalizado de indicador (+ e -) */
 .planos-faq summary::-webkit-details-marker {
-    display: none; /* Esconde seta padrão em navegadores WebKit */
+    display: none; 
 }
 
 .planos-faq summary::after {
@@ -666,7 +663,7 @@ main.planos {
     content: '−';
 }
 
-/* Texto da Resposta */
+
 .planos-faq details p {
     margin-top: 12px;
     font-size: 0.95rem;
@@ -674,7 +671,7 @@ main.planos {
     line-height: 1.6;
 }
 
-/* Links dentro da resposta */
+
 .planos-faq details a {
     color: #ff6600;
     font-weight: bold;
@@ -685,9 +682,7 @@ main.planos {
     text-decoration: underline;
 }
 
-/* ===================================================
-   RESPONSIVIDADE (MOBILE)
-   =================================================== */
+
 
 @media (max-width: 600px) {
     main.planos {
