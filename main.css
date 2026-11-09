@@ -673,10 +673,6 @@ tbody th {
     transition: background-color 0.2s ease;
 }
 
-.contact-btn:hover .contact-icon,
-.contact-btn:focus-visible .contact-icon {
-    background-color: #FE5000;
-}
 
 .contact-icon img {
     width: 30px;
